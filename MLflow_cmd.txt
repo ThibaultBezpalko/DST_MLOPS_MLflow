@@ -1,0 +1,5 @@
+# Install MLflow
+    pip3 install mlflow==2.9.2
+# Launch a tracking server
+    mlflow server --host 0.0.0.0 --port 8080
+#

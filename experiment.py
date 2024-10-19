@@ -12,7 +12,7 @@ client = MlflowClient(tracking_uri="http://127.0.0.1:8080")
 
 # Define experiment name, run name and artifact_path name
 apple_experiment = mlflow.set_experiment("Apple_Models")
-run_name = "first_run"
+run_name = "third_run"
 artifact_path = "rf_apples"
 
 # Import Database
@@ -26,7 +26,7 @@ X_train, X_val, y_train, y_val = train_test_split(
 
 # Train model
 params = {
-    "n_estimators": 10,
+    "n_estimators": 200,
     "max_depth": 10,
     "random_state": 42,
 }
